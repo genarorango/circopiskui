@@ -1,0 +1,378 @@
+/* Estilos generales */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(35, 33, 33, 0.8);
+    text-align: center;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 200px;
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+/* Redes sociales */
+.insta, .face, .position1, .position2, .position3 {
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.insta {
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.face {
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.position1 {
+    background-image: url(../img/Instagram_logo_2016.svg.webp);
+    left: 100px;
+    bottom: 50px;
+}
+
+.position2 {
+    background-image: url(../img/Facebook_f_logo_\(2019\).svg.png);
+    left: 150px;
+    bottom: 90px;
+}
+
+.position3 {
+    background-image: url(../img/whatsapp-logo-transparent-free-png.webp);
+    left: 45px;
+    bottom: 135px;
+}
+
+/* Menú de navegación */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center center;
+    margin-left: 10%;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-align: center center;
+    background-color: rgb(252, 248, 248);
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+
+li:hover a {
+    color: orange;
+}
+
+/* Sección de entrada */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Sección de introducción */
+.intro {
+    background-color: black;
+    background-image: url(../img/WhatsApp\ Image\ 2023-09-02\ at\ 14.44.37.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1100px;
+    background-size: cover;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Roboto', sans-serif; ;
+    padding-top: 100px; /* Espaciado superior para el contenido */
+}
+.intro1{
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+}
+.textoprimero{
+    color: #ccc;
+}
+/* Otras secciones */
+.position4 {
+    background-image: url(../img/aereo.jpeg);
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s;
+}
+
+
+/* Sección de fotos */
+.fotoss {
+    display: flex;
+    width: 100%;
+    height: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.imgg {
+    width:0% ;
+    flex-grow: 1;
+    max-width: 300px;
+    margin: 10px;
+    object-fit: cover;
+    opacity: 1;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.imgg:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    filter: contrast(120%);
+}
+
+/* Sección de videos */
+.youtube {
+   padding-bottom: 50%;
+
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Sección de shows */
+.shows {
+    background-image: url(../img/WhatsApp\ Image\ 2023-08-31\ at\ 13.46.02\ \(1\).jpeg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 100px; /* Espaciado superior para el contenido */
+}
+
+.show1, .show2 {
+    height: 600px;
+    width: 100%;
+    border: 1px solid rgba(215, 206, 206, 0.833);
+    color: #f7f7f4;
+    font-size: medium;
+    border-radius: 20px;
+    margin-top: 20px; /* Espaciado entre los elementos */
+    box-sizing: border-box; /* Evitar que los bordes afecten el ancho total */
+}
+.conocemas1{
+    color: aliceblue;
+    width: 30px;
+    height: 30px;
+}
+.show2 {
+    margin-left: auto; /* Centrar en pantallas grandes */
+    margin-right: auto; /* Centrar en pantallas grandes */
+}
+.imgshow1{
+    border-radius: 20px;
+}
+/* Sección de promociones */
+.promociones {
+    background-image: url(../img/WhatsApp\ Image\ 2023-09-02\ at\ 14.41.01.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 100px; /* Espaciado superior para el contenido */
+    border-radius: 1000px;
+}
+
+.textopromo {
+    width: 100%;
+    max-width: 500px; /* Limitar el ancho del texto */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #131212;
+    font-size: medium;
+    margin: 0 auto; /* Centrar en pantallas más grandes */
+    padding: 20px; /* Espaciado interior */
+    box-sizing: border-box; /* Evitar que los bordes afecten el ancho total */
+}
+
+.bugggy {
+    width: 100%;
+    max-width: 500px; /* Limitar el ancho de la imagen */
+    height: auto;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url(../img/el\ buggy.jpeg);
+    margin: 0 auto; /* Centrar en pantallas más grandes */
+    margin-top: 20px; /* Espaciado superior */
+    padding: 20px; /* Espaciado interior */
+    box-sizing: border-box; /* Evitar que los bordes afecten el ancho total */
+}
+
+/* Sección de contacto */
+.contacto1 {
+    height: 400px;
+    background-image: url(../img/fondo2.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+.contacto2{
+    color: rgb(68, 0, 255);
+    font-size: 300%;
+}
+.linea1{
+    height: 30px;
+}
+.contacto3{
+    color: rgb(33, 8, 254);
+    font-size: xx-large;
+}
+/* Pie de página */
+.foter {
+    background-image: url(../img/WhatsApp\ Image\ 2023-09-13\ at\ 16.31.18.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 550px;
+    background-color: #3b3434;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Cambiar a diseño de columna en pantallas más pequeñas */
+    align-items: center; /* Centrar elementos horizontalmente */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; /* Espaciado entre los enlaces */
+}
+
+.footer-links li {
+    display: block; /* Cambiar a diseño de bloque en pantallas más pequeñas */
+    margin: 10px 0; /* Espaciado entre los elementos */
+}
+
+.footer-social a {
+    font-size: 24px;
+    margin: 10px 0; /* Espaciado entre los iconos de redes sociales */
+}
+/* Estilos generales */
+.grid1 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/circo\ sin\ bordes.png);
+    background-position: center center;
+    background-size: contain;
+
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Estilos de las secciones */
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Estilos de texto */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #070707;
+}
+
+/* Efecto hover interactivo */
+.grid-item:hover {
+    transform: scale(1.70);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media queries para diseño responsive */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
