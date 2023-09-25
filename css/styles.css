@@ -208,10 +208,17 @@ video {
     margin-top: 20px; /* Espaciado entre los elementos */
     box-sizing: border-box; /* Evitar que los bordes afecten el ancho total */
 }
+.texto3{
+    position: relative;
+    margin-right: 10%;
+}
 .conocemas1{
-    color: aliceblue;
-    width: 30px;
-    height: 30px;
+    color: black;
+    width: 40px;
+    height: 45px;
+    background-color: #f0f0f0;
+    border: 3px solid white;
+    border-radius: 7px;
 }
 .show2 {
     margin-left: auto; /* Centrar en pantallas grandes */
@@ -321,6 +328,10 @@ video {
     margin: 10px 0; /* Espaciado entre los iconos de redes sociales */
 }
 /* Estilos generales */
+.conocemass{
+    width: 100%;
+    height: 100%;
+}
 .grid1 {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -368,5 +379,70 @@ p {
 .grid-item:hover {
     transform: scale(1.50);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #fff;
+    height: 300%;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambia a una columna en pantallas pequeñas */
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Estilos de las secciones */
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Estilos de texto */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #070707;
+}
+
+/* Efecto hover interactivo */
+.grid-item:hover {
+    transform: scale(1.05); /* Cambia el valor para ajustar la escala en el hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    /* Ajusta los estilos para pantallas pequeñas aquí */
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas pequeñas */
+    }
+}
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Cambia a una columna en pantallas pequeñas */
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-bottom: 100px; /* Agrega margen inferior para evitar que entre en el footer */
 }
 
