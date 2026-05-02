@@ -1,163 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circo Piskui</title>
-    <link rel="shortcut icon" href="./img/Sin título3.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Circo PISKUI · El circo más grande de Córdoba. Animaciones, shows aéreos, fuego y eventos.">
+  <meta name="theme-color" content="#0c0a08">
+  <title>Circo PISKUI · El circo más grande de Córdoba</title>
+  <link rel="shortcut icon" href="./img/circo.PNG">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class=".container" >
-    <header class="header">
-        <img class="logo" src="./img/circo.PNG" alt="Circo PISKUI">
-        <nav class="header__nav">
-             <label for=""></label>
-            
-            <ul class="header__nav__ul">
-                <li class="header__nav__ul__li"><a href="#intro">INICIO</a></li>
-                <li class="header__nav__ul_li"><a href="#sobrenosotros">SOBRE NOSOTROS</a></li>
-                <li><a href="#promociones">PROMOCIONES</a></li>
-                <li class="header_nav_ul_li"><a class="header_nav_ul_li_a" href="#contacto">CONTACTO</a></li>
-            </ul> 
-               <div class="adentro">
-            <a href="https://www.instagram.com/circopiskui/#" target="_blank">
-                <img class="insta" src="./img/Instagram_logo_2016.svg.webp" alt="">
-            </a>
-            <a href="https://www.facebook.com/photo/?fbid=583159562571767&set=a.583159469238443&__tn__=%3C" target="_blank">
-                <img class="face" src="./img/Facebook_f_logo_(2019).svg.png" alt="">
-            </a>
-              </div>  
-        </nav>
-    </header>
-    <main>
-        <a id="intro" href="intro"></a>
-        <section class="entrada">
-            <video src="./img/WhatsApp Video 2023-08-31 at 13.46.02.mp4"
-            autoplay="true" muted="true" loop="true">
-            
-            </video>      
-        </section>
-        <section class="intro">
-            <div class="intro1">
-            <h1>Conoce al Circo PISKUI</h1>
-            <h2>El Circo Más Grande de Córdoba</h2>
-            <p class="textoprimero">Bienvenido al emocionante mundo del Circo PISKUI. Somos conocidos por nuestros espectaculares shows aéreos, impresionantes performances de fuego y animaciones llenas de diversión.</p>
-            </div>
-            <section class="fotoss">
-                <img class="imgg" src="./img/acrobacias.jpeg" alt="">
-                <img class="imgg" src="./img/aereo.jpeg" alt="">
-                <img class="imgg" src="./img/carpa2.jpeg" alt="">
-                <img class="imgg" src="./img/circo aro.jpeg" alt="">
-            </section>
-     
-               
-            <div class="youtube"> <iframe width="560" height="315" src="https://www.youtube.com/embed/S9BSwmeqXiQ?si=VBYv3qCHMIkI9In7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+<body>
 
-        </section>
-        <section class="shows">
-            <a id="sobrenosotros" href="sobrenosotros"></a>
-            <h1>Nuestros Shows</h1>
-            <div class="show1">
-                <h3>Animaciones</h3>
-                <img class="imgshow1" src="./img/carpa.jpeg" alt="carpa">
-                <ul>
-                    <h2 class="contact">animaciones de fiestas infantiles</h2>
-                    <h2 class="contact">animaciones de fiestas de 15, casamientos</h2>
-                    <h2 class="contact">recepciones en boliches </h2>
-                    <h2 class="contact">y todo tipo de eventos de entretenimiento</h2>
-                </ul>
-                <a class="conocemas1" href="./pages/conocemas.html">CONOCE MAS</a>
-            </div>
-            <div class="show2">
-                <h3> shows aereos</h3>
-                <img class="imgshow1" src="./img/aereo2.jpeg" alt="aereo">
-                <ul class="texto3">
-                    <h2>acrobacias en estructuras</h2>
-                    <h2>trapecio </h2>
-                    <h2>teatro aereo</h2>
-                </ul>
-                <a class="conocemas1" href="./pages/conocemas.html">CONOCE MAS</a>
+  <!-- ── HEADER ───────────────────────────────────────────────────────────── -->
+  <header class="nav">
+    <a href="#hero" class="nav__logo">
+      <img src="./img/circo.PNG" alt="Circo PISKUI">
+    </a>
+    <button class="nav__toggle" aria-label="Menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu">
+      <a href="#sobre">Sobre nosotros</a>
+      <a href="#shows">Shows</a>
+      <a href="#promos">Promociones</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto" class="nav__cta">Contactar</a>
+    </nav>
+  </header>
 
-            </div>
-        </section>
-        <section class="promociones">
-            <a id="promociones" href="promociones"></a>
-            <div>
-             <h1>promociones y sorteos</h1>
-            </div>
-            <div class="textopromo">
-                <p>
-                 <h2>
-                    conoce los beneficios
-                 </h2>
-                 <li>
-                    <h3>
-                        1:seguinos en instagram y facebook donde estaremos subiendo historias para participar en sorteos
-                    </h3>
-                 </li>
-                 <li>
-                    <h3>
-                        2: lo único  que tenes que hacer es enviarnos un saludo al programa "el bar del 10" en  canal 10 los viernes a la mañana
-                    </h3>
-                 </li>
-                 <li>
-                    <h3>
-                        3: y listo, estas participando para ganar unas entradas al parque la SERRANITA
-                    </h3>
-                </li>
-                </p>
-            </div>
-            <div class="bugggy">
-              <img class="buggy" src="./img/el buggy.jpeg" alt="">
-            </div>
-        </section>
-        <section class="contacto1">
-            <a id="contacto" href="contacto"></a>
-            <h1 class="contacto2"> contacto</h1>
-            <hr class="linea1">
-            <h2 class="contacto3"> llamanos al 3541-60-7879(Carla) o al 0351 669-7044(Ricky)</h2>
-            <hr class="linea1">
-            <h2 class="contacto3">nuestro mail
-                rickypiskui@yahoo.com.ar
-            </h2>
+  <!-- ── HERO ─────────────────────────────────────────────────────────────── -->
+  <section id="hero" class="hero">
+    <video class="hero__video" autoplay muted loop playsinline poster="./img/carpa.jpeg">
+      <source src="./img/WhatsApp Video 2023-08-31 at 13.46.02.mp4" type="video/mp4">
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Córdoba · Argentina</p>
+      <h1 class="hero__title">Circo <span>PISKUI</span></h1>
+      <p class="hero__tagline">Acrobacia aérea, fuego y animaciones que cortan el aliento.</p>
+      <a href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20show" target="_blank" class="hero__cta">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Contactar por WhatsApp
+      </a>
+    </div>
+    <a href="#sobre" class="hero__scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
 
-        </section>
- </main>
- <footer class="foter">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="img/circo.PNG" alt="Logo de tu empresa">
+  <!-- ── SOBRE NOSOTROS ──────────────────────────────────────────────────── -->
+  <section id="sobre" class="section section--sobre">
+    <div class="section__inner">
+      <p class="eyebrow">Quiénes somos</p>
+      <h2>Conoce al Circo PISKUI</h2>
+      <p class="section__lead">
+        Bienvenido al emocionante mundo del Circo PISKUI. Somos conocidos por nuestros
+        espectaculares shows aéreos, impresionantes performances de fuego y animaciones
+        llenas de diversión. Llevamos la magia del circo a fiestas, eventos y boliches
+        de toda Córdoba.
+      </p>
+      <div class="sobre__grid">
+        <img src="./img/acrobacias.jpeg" alt="Acrobacias">
+        <img src="./img/aereo.jpeg" alt="Show aéreo">
+        <img src="./img/carpa2.jpeg" alt="Carpa de circo">
+        <img src="./img/circo aro.jpeg" alt="Aro aéreo">
       </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de nosotros</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <p>Contacto:</p>
-        <p>Teléfono: 3541-63-9509</p>
-                rickypiskui@yahoo.com.ar
-                <p>Correo electrónico: </p>
-         <p>todos los derechos reservados 2023</p>
+      <div class="youtube-embed">
+        <iframe src="https://www.youtube.com/embed/S9BSwmeqXiQ" title="Circo PISKUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="footer-social">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+  </section>
+
+  <!-- ── SHOWS ───────────────────────────────────────────────────────────── -->
+  <section id="shows" class="section section--shows">
+    <div class="section__inner">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2>Nuestros shows</h2>
+
+      <div class="shows__grid">
+
+        <article class="show-card">
+          <img src="./img/carpa.jpeg" alt="Animaciones infantiles">
+          <div class="show-card__body">
+            <h3>Animaciones infantiles</h3>
+            <ul>
+              <li>Función de circo (malabares · acrobacias · magia · baile)</li>
+              <li>Show de burbujas</li>
+              <li>Acrobacias con airtrack</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="show-card">
+          <img src="./img/funcioon3.jpeg" alt="Family day">
+          <div class="show-card__body">
+            <h3>Tarde infantil · Family Day</h3>
+            <ul>
+              <li>Juegos de kermesse (tumba latas, puntería, pesca)</li>
+              <li>Juegos deportivos (fútbol, básquet, rugby)</li>
+              <li>Plaza infantil con castillos inflables y airtrack</li>
+              <li>Función de circo completa</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="show-card">
+          <img src="./img/aereo2.jpeg" alt="Shows aéreos">
+          <div class="show-card__body">
+            <h3>Shows aéreos</h3>
+            <ul>
+              <li>Acrobacias grupales en estructura sobre grúa</li>
+              <li>Trapecio a vuelo</li>
+              <li>Trapecio fijo · telas · cuerda indiana</li>
+              <li>Teatro aéreo · pole aéreo</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="show-card">
+          <img src="./img/aereo3.jpeg" alt="Eventos y fuego">
+          <div class="show-card__body">
+            <h3>Eventos y fuego</h3>
+            <ul>
+              <li>Personajes en zancos</li>
+              <li>Malabares con fuego</li>
+              <li>Swing con fuego</li>
+              <li>Lanza llamas</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROMOCIONES ─────────────────────────────────────────────────────── -->
+  <section id="promos" class="section section--promos">
+    <div class="section__inner">
+      <p class="eyebrow">No te lo pierdas</p>
+      <h2>Promociones y sorteos</h2>
+      <p class="section__lead">Conocé los beneficios y participá por entradas al parque La Serranita.</p>
+
+      <ol class="promos__list">
+        <li>
+          <span class="promos__num">1</span>
+          <p>Seguinos en Instagram y Facebook — ahí subimos historias para participar en sorteos.</p>
+        </li>
+        <li>
+          <span class="promos__num">2</span>
+          <p>Mandanos un saludo al programa <strong>"El Bar del 10"</strong> en Canal 10, los viernes a la mañana.</p>
+        </li>
+        <li>
+          <span class="promos__num">3</span>
+          <p>Listo. Estás participando para ganar entradas al parque <strong>La Serranita</strong>.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── GALERÍA ─────────────────────────────────────────────────────────── -->
+  <section id="galeria" class="section section--galeria">
+    <div class="section__inner">
+      <p class="eyebrow">Lo nuestro en imágenes</p>
+      <h2>Galería</h2>
+      <div class="galeria__grid">
+        <img src="./img/aereo.jpeg" alt="">
+        <img src="./img/aereo4.jpeg" alt="">
+        <img src="./img/circo aro.jpeg" alt="">
+        <img src="./img/acrobacias.jpeg" alt="">
+        <img src="./img/carpa.jpeg" alt="">
+        <img src="./img/carpa2.jpeg" alt="">
+        <img src="./img/el buggy.jpeg" alt="">
+        <img src="./img/funcioon3.jpeg" alt="">
+        <img src="./img/aereo2.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ────────────────────────────────────────────────────────── -->
+  <section id="contacto" class="section section--contacto">
+    <div class="section__inner">
+      <p class="eyebrow">Contratá un show</p>
+      <h2>Hablemos</h2>
+      <p class="section__lead">Escribinos por WhatsApp y armamos juntos el show perfecto para tu evento.</p>
+
+      <a href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20show" target="_blank" class="contacto__wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <div>
+          <span class="contacto__wa-label">WhatsApp directo</span>
+          <span class="contacto__wa-num">+54 9 3541 60-7879</span>
+        </div>
+      </a>
+
+      <div class="contacto__social">
+        <a href="https://www.instagram.com/circopiskui/" target="_blank" aria-label="Instagram">
+          <img src="./img/Instagram_logo_2016.svg.webp" alt="Instagram">
+          <span>Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/circopiskui" target="_blank" aria-label="Facebook">
+          <img src="./img/Facebook_f_logo_(2019).svg.png" alt="Facebook">
+          <span>Facebook</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <img src="./img/circo.PNG" alt="Circo PISKUI" class="footer__logo">
+      <p>Circo PISKUI · Córdoba, Argentina</p>
+      <p class="footer__copy">© 2026 · Todos los derechos reservados</p>
     </div>
   </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <!-- ── FLOATING WHATSAPP ───────────────────────────────────────────────── -->
+  <a href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20show" target="_blank" class="wa-float" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    // mobile menu toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('is-open')
+      document.getElementById('navToggle').classList.toggle('is-open')
+    })
+    // close menu on link click
+    document.querySelectorAll('.nav__menu a').forEach(a => a.addEventListener('click', () => {
+      document.getElementById('navMenu').classList.remove('is-open')
+      document.getElementById('navToggle').classList.remove('is-open')
+    }))
+    // fade-in on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in') })
+    }, { threshold: 0.12 })
+    document.querySelectorAll('.section, .show-card, .galeria__grid img, .promos__list li').forEach(el => io.observe(el))
+  </script>
+
 </body>
 </html>
-
-
