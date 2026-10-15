@@ -185,3 +185,8 @@ p{margin:0 0 1em}
 .card__fuego span:nth-child(3){left:70%;width:26%;animation-duration:1.4s;animation-delay:-.8s}
 @keyframes llama{0%{transform:translateX(-50%) scaleY(.9) skewX(-4deg)}100%{transform:translateX(-50%) scaleY(1.12) skewX(5deg)}}
 @media (prefers-reduced-motion:reduce){.card__fuego span{animation:none}}
+
+.serranita__fotos{position:relative;padding-bottom:12%}
+.serranita__fotos img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:28px;box-shadow:var(--sombra)}
+.serranita__fotos .mini{position:absolute;right:-4%;bottom:0;width:48%;aspect-ratio:16/9;border:5px solid var(--crema);border-radius:20px}
+@media (max-width:600px){.serranita__fotos .mini{right:-2%;width:52%}}
