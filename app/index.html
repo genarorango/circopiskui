@@ -32,6 +32,12 @@
 .lista span{color:var(--gris);font-size:15.5px}
 .iconos{aspect-ratio:4/3;display:grid;grid-template-columns:repeat(4,1fr);gap:6%;padding:6% 7%;background:linear-gradient(135deg,#efe9ff,#ffe9d6);align-content:center}
 .iconos img{width:100%;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 6px 10px rgba(42,33,64,.18))}
+.pronto{border:0;border-radius:28px;padding:34px 28px;max-width:440px;width:calc(100% - 32px);text-align:center;background:var(--crema);color:var(--tinta);box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.pronto::backdrop{background:rgba(22,17,42,.7)}
+.pronto img{margin:0 auto 16px;border-radius:20px}
+.pronto h2{font-size:34px}
+.pronto__b{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
+.pronto .btn--light{box-shadow:inset 0 0 0 2px #d9cfe9}
 .legal{background:var(--noche);color:#fff;padding:80px 0;border-radius:40px 40px 0 0}
 .legal .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
 @media (max-width:820px){.app-hero .wrap,.lista{grid-template-columns:1fr}.app-hero{padding-top:100px}}
@@ -41,7 +47,7 @@
 <header class="top top--solid" id="top">
   <a class="brand" href="../" aria-label="Circo Piskui, inicio"><img src="../img/w/logo.webp" alt="" width="44" height="44"><span>Circo Piskui</span></a>
   <nav id="nav" aria-label="Secciones"><a href="../">El circo</a><a href="#juegos">Juegos</a><a href="#familias">Familias</a><a href="#legal">Legal</a></nav>
-  <a class="btn btn--violet btn--sm" href="https://circo-piskui.vercel.app/?src=sitio" target="_blank" rel="noopener" style="box-shadow:none">Jugar</a>
+  <a class="btn btn--violet btn--sm" href="#pronto" data-pronto style="box-shadow:none">Jugar</a>
   <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
 </header>
 
@@ -53,7 +59,7 @@
       <p class="kicker">El juego del circo</p>
       <h1>Circo Piskui<br>en tu celu</h1>
       <p class="lead">Minijuegos de kermés, el camerino para vestir y maquillar a Ricky y Carla, armá tu propio circo y paseá por La Serranita. Para chicos de 2 a 10 años.</p>
-      <a class="btn btn--wa" href="https://circo-piskui.vercel.app/?src=sitio" target="_blank" rel="noopener">Jugar ahora en el navegador</a>
+      <a class="btn btn--wa" href="#pronto" data-pronto>Jugar</a>
       <div class="stores"><span>Google Play · muy pronto</span><span>App Store · muy pronto</span></div>
     </div>
     <div class="duo"><img class="r" src="../img/w/ricky.webp" alt="Ricky"><img class="c" src="../img/w/carla.webp" alt="Carla"><img class="b" src="../img/w/bubin.webp" alt="Bubín"></div>
@@ -72,7 +78,7 @@
     <div class="lista">
       <div><b>El camerino</b><span>Maquillá y vestí a Ricky y Carla con trajes de circo, Halloween y acrobacia.</span></div>
       <div><b>Tienda con monedas</b><span>Ganás monedas jugando y las cambiás por ropa, alas y animalitos.</span></div>
-      <div><b>Colorear y vestir</b><span>Dibujos para pintar y amigos para disfrazar.</span></div>
+      <div><b>Colorear</b><span>Dibujos tiernos para pintar con balde, pincel, brillos y stickers.</span></div>
     </div>
   </div>
 </section>
@@ -100,6 +106,13 @@
   </div>
 </section>
 </main>
+<dialog id="pronto" class="pronto">
+  <img src="../img/w/app-icon.webp" alt="" width="84" height="84">
+  <p class="kicker kicker--dark">Próximamente</p>
+  <h2>¡Muy pronto para jugar!</h2>
+  <p>Circo Piskui va a estar en Google Play y App Store. Seguinos en Instagram para enterarte el día que sale.</p>
+  <div class="pronto__b"><a class="btn btn--violet" href="https://www.instagram.com/circopiskui/" target="_blank" rel="noopener">Seguir en Instagram</a><button class="btn btn--light" id="cerrar">Cerrar</button></div>
+</dialog>
 <footer class="pie" style="padding-top:20px">
   <p>© 2026 Circo Piskui · Villa Carlos Paz, Córdoba, Argentina</p>
   <p><a href="../">Circo Piskui</a> · <a href="terminos.html">Términos</a> · <a href="privacidad.html">Privacidad</a></p>
@@ -108,6 +121,13 @@
 const menu = document.getElementById('menu');
 menu.addEventListener('click', () => { const o = document.body.classList.toggle('nav-open'); menu.setAttribute('aria-expanded', o); });
 document.querySelectorAll('#nav a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('nav-open')));
+// el juego todavía no salió: los botones de jugar avisan que viene pronto
+const pronto = document.getElementById('pronto');
+const abrir = () => { if (!pronto.open) pronto.showModal(); };
+document.querySelectorAll('[data-pronto]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); abrir(); }));
+document.getElementById('cerrar').addEventListener('click', () => pronto.close());
+pronto.addEventListener('click', e => { if (e.target === pronto) pronto.close(); });
+if (location.hash === '#pronto') abrir();
 </script>
 </body>
 </html>
