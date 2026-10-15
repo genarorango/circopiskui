@@ -122,7 +122,7 @@ p{margin:0 0 1em}
 
 /* temporada */
 .temporada{position:relative;color:#fff;background:var(--noche);padding:130px 0 140px;overflow:hidden}
-.temporada>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.temporada>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 74%;opacity:.7}
 .temporada::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,23,19,.95) 0%,rgba(29,23,19,.62) 55%,rgba(29,23,19,.2));z-index:1}
 .temporada__in{position:relative;z-index:2}
 .temporada .kicker{color:var(--sol)}
