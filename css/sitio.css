@@ -171,3 +171,9 @@ p{margin:0 0 1em}
 .serranita__txt p{font-size:18px;color:#4a4063}
 @media (max-width:960px){.serranita{grid-template-columns:1fr;padding-top:70px}}
 @media (max-width:600px){.juegos__art .r{height:200px}.juegos__art .c{height:166px;margin-left:-18px}.juegos__art .b{height:136px;margin-left:-4px}}
+
+.intro__foto{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28px;box-shadow:var(--sombra)}
+.intro{grid-template-columns:1.2fr 1fr;row-gap:18px}
+.intro>ul,.intro>img{grid-column:2}
+.intro__txt{grid-row:1/span 2}
+@media (max-width:960px){.intro>ul,.intro>img{grid-column:auto}.intro__txt{grid-row:auto}}
