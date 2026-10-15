@@ -10,9 +10,9 @@
 <link rel="icon" href="../img/w/app-logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/sitio.css?v=11">
+<link rel="stylesheet" href="../css/sitio.css?v=12">
 <style>
-.app-hero{background:linear-gradient(160deg,#2a1b52,var(--noche));color:#fff;padding:120px 0 80px}
+.app-hero{background:var(--noche);color:#fff;padding:130px 0 90px}
 .app-hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
 .app-hero h1{font-size:clamp(42px,7vw,84px)}
 .app-hero .lead{margin-bottom:26px}
@@ -22,7 +22,7 @@
 .app-hero .duo img{height:280px}.app-hero .duo img+img{margin-left:-14px}
 @media (max-width:600px){.app-hero .duo img{height:160px}.app-hero .duo img+img{margin-left:-8px}}
 .stores{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.stores span{padding:10px 16px;border-radius:12px;background:rgba(255,255,255,.1);font-size:14px}
+.stores{gap:4px 22px}.stores span{font-size:14px;opacity:.72}
 .feat{padding:90px 0}
 .feat .cards .card{background:#fff;color:var(--tinta);box-shadow:var(--sombra)}
 .feat .card p{color:#4a4063}
@@ -45,10 +45,11 @@
 </style>
 </head>
 <body>
+<a class="saltar" href="#juegos">Saltar al contenido</a>
 <header class="top top--solid" id="top">
   <a class="brand" href="../" aria-label="Circo Piskui, inicio"><img src="../img/w/logo.webp" alt="" width="44" height="44"><span>Circo Piskui</span></a>
   <nav id="nav" aria-label="Secciones"><a href="../">El circo</a><a href="#juegos">Juegos</a><a href="#familias">Familias</a><a href="#legal">Legal</a></nav>
-  <a class="btn btn--violet btn--sm" href="#pronto" data-pronto style="box-shadow:none">Jugar</a>
+  <a class="btn btn--violet btn--sm" href="#pronto" data-pronto>Jugar</a>
   <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
 </header>
 
@@ -87,18 +88,20 @@
 <section class="faq wrap" id="familias">
   <p class="kicker kicker--dark">Para mamás y papás</p>
   <h2>Pensado para chicos</h2>
-  <details open><summary>¿Tiene publicidad?</summary><p>No. No hay publicidad, ni chat, ni contacto con otras personas.</p></details>
-  <details><summary>¿Es gratis?</summary><p>Los minijuegos, el camerino y la tienda con monedas del juego son gratis. La Serranita y Armá tu circo se juegan completos la primera vez; después, una parte sigue gratis y el resto es parte del <b>Piskui Club</b>, una suscripción opcional que se paga desde la tienda del celular.</p></details>
-  <details><summary>¿Los chicos pueden comprar sin querer?</summary><p>No. Antes de cualquier pago aparece un control para adultos, y el cobro siempre lo confirma la tienda (Google Play o App Store) con la cuenta del adulto.</p></details>
-  <details><summary>¿Qué datos usa?</summary><p>Ninguno del chico. El progreso se guarda en el celular y la app manda solo estadísticas anónimas de uso para mejorar los juegos. Los detalles están en la <a href="privacidad.html">política de privacidad</a>.</p></details>
-  <details><summary>¿Cómo cancelo el Piskui Club?</summary><p>Desde la tienda: en Android, Play Store → Pagos y suscripciones → Suscripciones; en iPhone, Ajustes → tu nombre → Suscripciones. Más info en los <a href="terminos.html">términos</a>.</p></details>
+  <dl class="faq__lista">
+    <div><dt>¿Tiene publicidad?</dt><dd>No. No hay publicidad, ni chat, ni contacto con otras personas.</dd></div>
+    <div><dt>¿Es gratis?</dt><dd>Los minijuegos, el camerino y la tienda con monedas del juego son gratis. La Serranita y Armá tu circo se juegan completos la primera vez; después, una parte sigue gratis y el resto es parte del <b>Piskui Club</b>, una suscripción opcional que se paga desde la tienda del celular.</dd></div>
+    <div><dt>¿Los chicos pueden comprar sin querer?</dt><dd>No. Antes de cualquier pago aparece un control para adultos, y el cobro siempre lo confirma la tienda (Google Play o App Store) con la cuenta del adulto.</dd></div>
+    <div><dt>¿Qué datos usa?</dt><dd>Ninguno del chico. El progreso se guarda en el celular y la app manda solo estadísticas anónimas de uso para mejorar los juegos. Los detalles están en la <a href="privacidad.html">política de privacidad</a>.</dd></div>
+    <div><dt>¿Cómo cancelo el Piskui Club?</dt><dd>Desde la tienda: en Android, Play Store → Pagos y suscripciones → Suscripciones; en iPhone, Ajustes → tu nombre → Suscripciones. Más info en los <a href="terminos.html">términos</a>.</dd></div>
+  </dl>
 </section>
 
 <section class="legal" id="legal">
   <div class="wrap">
     <p class="kicker">Legal</p>
     <h2>Términos y privacidad del juego</h2>
-    <p style="max-width:640px;opacity:.85">Todo lo que tenés que saber sobre el uso del juego, la suscripción Piskui Club, las devoluciones y cómo cuidamos los datos.</p>
+    <p class="legal__txt">Todo lo que tenés que saber sobre el uso del juego, la suscripción Piskui Club, las devoluciones y cómo cuidamos los datos.</p>
     <div class="links">
       <a class="btn btn--light" href="terminos.html">Términos y condiciones</a>
       <a class="btn btn--ghost" href="privacidad.html">Política de privacidad</a>
@@ -110,11 +113,11 @@
 <dialog id="pronto" class="pronto">
   <img src="../img/w/app-logo.webp" alt="" width="96" height="96">
   <p class="kicker kicker--dark">Próximamente</p>
-  <h2>¡Muy pronto para jugar!</h2>
+  <h2>Muy pronto para jugar</h2>
   <p>Circo Piskui va a estar en Google Play y App Store. Seguinos en Instagram para enterarte el día que sale.</p>
   <div class="pronto__b"><a class="btn btn--violet" href="https://www.instagram.com/circopiskui/" target="_blank" rel="noopener">Seguir en Instagram</a><button class="btn btn--light" id="cerrar">Cerrar</button></div>
 </dialog>
-<footer class="pie" style="padding-top:20px">
+<footer class="pie pie--suelto">
   <p>© 2026 Circo Piskui · Villa Carlos Paz, Córdoba, Argentina</p>
   <p><a href="../">Circo Piskui</a> · <a href="terminos.html">Términos</a> · <a href="privacidad.html">Privacidad</a></p>
 </footer>

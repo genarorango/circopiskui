@@ -13,9 +13,10 @@
 <link rel="icon" href="img/w/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/sitio.css?v=11">
+<link rel="stylesheet" href="css/sitio.css?v=12">
 </head>
 <body>
+<a class="saltar" href="#eventos">Saltar al contenido</a>
 
 <header class="top" id="top">
   <a class="brand" href="#inicio" aria-label="Circo Piskui, inicio"><img src="img/w/logo.webp" alt="" width="44" height="44"><span>Circo Piskui<small>Eventos y espectáculos</small></span></a>
@@ -41,11 +42,9 @@
     <p class="lead">Shows de circo, kermés y animación para empresas, municipios, colegios y familias.</p>
     <div class="hero__cta">
       <a class="btn btn--wa" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20contratar%20un%20show" target="_blank" rel="noopener">Pedir presupuesto</a>
-      <a class="btn btn--ghost" href="#eventos">Ver servicios</a>
+      <a class="link-flecha" href="#eventos">Ver servicios <span aria-hidden="true">→</span></a>
     </div>
-    <ul class="chips">
-      <li>Cumpleaños</li><li>Kermés</li><li>Día del Niño</li><li>Family day</li><li>Shows aéreos</li><li>Fuego</li>
-    </ul>
+    <p class="hero__lista">Cumpleaños · Kermés · Día del Niño · Family day · Shows aéreos · Fuego</p>
   </div>
 </section>
 
@@ -72,11 +71,11 @@
   <div class="wrap">
     <p class="kicker">Servicios</p>
     <h2>Qué evento estás armando</h2>
-    <div class="cards">
+    <div class="servicios">
 
-      <article class="card" id="cumples">
-        <img src="img/w/escena_hongos.webp" alt="Un chico participando del show de Ricky y Carla" loading="lazy" style="object-position:50% 60%">
-        <div class="card__b">
+      <article class="servicio" id="cumples">
+        <img src="img/w/escena_hongos.webp" alt="Un chico participando del show de Ricky y Carla" loading="lazy" class="pos-bajo">
+        <div class="servicio__b">
           <h3>Cumpleaños infantiles</h3>
           <p>Una función de circo en tu cumple, en casa, salón o al aire libre.</p>
           <ul><li>Malabares, acrobacias, magia y baile</li><li>Show de burbujas</li><li>Acrobacias con airtrack</li><li>Los chicos participan del show</li></ul>
@@ -84,9 +83,9 @@
         </div>
       </article>
 
-      <article class="card">
-        <img src="img/w/zancos_kermes.webp" alt="Zancos, inflables y banderines en un family day" loading="lazy" style="object-position:50% 20%">
-        <div class="card__b">
+      <article class="servicio">
+        <img src="img/w/zancos_kermes.webp" alt="Zancos, inflables y banderines en un family day" loading="lazy" class="pos-arriba">
+        <div class="servicio__b">
           <h3>Kermés y family day</h3>
           <p>Una tarde entera de juegos para colegios, clubes, barrios y empresas.</p>
           <ul><li>Kermés tradicional: tumbalatas, puntería, pesca y más</li><li>Juegos deportivos: fútbol, básquet, rugby</li><li>Plaza infantil con castillos inflables y airtrack</li><li>Función de circo para cerrar</li></ul>
@@ -94,9 +93,9 @@
         </div>
       </article>
 
-      <article class="card card--sun">
+      <article class="servicio">
         <img src="img/w/dia_nino.webp" alt="Cientos de chicos bailando con el Circo Piskui en el Día del Niño" loading="lazy">
-        <div class="card__b">
+        <div class="servicio__b">
           <h3>Día del Niño</h3>
           <p>Armamos el festejo completo para municipios, empresas, gremios, clubes y colegios.</p>
           <ul><li>Función de circo para mucho público</li><li>Kermés, inflables y juegos</li><li>Personajes en zancos y espuma</li><li>Conviene reservar con tiempo: agosto se llena</li></ul>
@@ -104,9 +103,9 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="servicio">
         <img src="img/w/aereo_real.webp" alt="Acróbatas en la estructura aérea montada en grúa" loading="lazy">
-        <div class="card__b">
+        <div class="servicio__b">
           <h3>Shows aéreos</h3>
           <p>Para abrir un evento, una fiesta o un lanzamiento con algo que nadie olvida.</p>
           <ul><li>Acrobacias grupales en estructura montada en grúa</li><li>Trapecio fijo y trapecio a vuelo</li><li>Telas, cuerda indiana y pole aéreo</li><li>Teatro aéreo</li></ul>
@@ -114,9 +113,9 @@
         </div>
       </article>
 
-      <article class="card">
-        <div class="card__duo"><img src="img/w/fuego.webp" alt="Ricky haciendo malabares con fuego en una fiesta de noche" loading="lazy"><img src="img/w/pole_calle.webp" alt="Número de pole de noche en la calle" loading="lazy" style="object-position:50% 25%"></div>
-        <div class="card__b">
+      <article class="servicio">
+        <div class="servicio__duo"><img src="img/w/fuego.webp" alt="Ricky haciendo malabares con fuego en una fiesta de noche" loading="lazy"><img src="img/w/pole_calle.webp" alt="Número de pole de noche en la calle" loading="lazy" class="pos-arriba"></div>
+        <div class="servicio__b">
           <h3>Eventos, boliches y fuego</h3>
           <p>Recepciones, casamientos, fiestas de empresa y noches de boliche.</p>
           <ul><li>Personajes en zancos</li><li>Malabares con fuego</li><li>Swing con fuego y lanzallamas</li><li>Animación y recepción de invitados</li></ul>
@@ -124,9 +123,9 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="servicio">
         <img src="img/w/espuma_carpa.webp" alt="Fiesta de espuma frente a la carpa" loading="lazy">
-        <div class="card__b">
+        <div class="servicio__b">
           <h3>Espuma y burbujas</h3>
           <p>El cierre que los chicos piden siempre, ideal para días de calor.</p>
           <ul><li>Fiesta de espuma</li><li>Show de burbujas gigantes</li><li>Se suma a cualquier evento</li></ul>
@@ -170,11 +169,11 @@
       <img src="img/w/pole_parque.webp" alt="Función al aire libre en un parque con cientos de familias" loading="lazy" class="wide">
       <img src="img/w/carla_burbujas.webp" alt="Carla haciendo burbujas en la calle" loading="lazy" class="tall">
       <img src="img/w/salon_publico.webp" alt="Función en un salón con público" loading="lazy" class="wide">
-      <img src="img/w/shopping.webp" alt="Show del Circo Piskui en un patio de comidas lleno de chicos" loading="lazy" class="wide" style="object-position:50% 35%">
+      <img src="img/w/shopping.webp" alt="Show del Circo Piskui en un patio de comidas lleno de chicos" loading="lazy" class="wide pos-arriba">
       <img src="img/w/multitud.webp" alt="Salón lleno de chicos con el Circo Piskui" loading="lazy" class="wide">
       <img src="img/w/duo_logo.webp" alt="Ricky y Carla con el logo del circo" loading="lazy" class="tall">
       <img src="img/w/lapachos.webp" alt="La carpa entre lapachos" loading="lazy" class="wide">
-      <img src="img/w/zancos_duo.webp" alt="Zancos en un evento al aire libre" loading="lazy" class="wide" style="object-position:50% 20%">
+      <img src="img/w/zancos_duo.webp" alt="Zancos en un evento al aire libre" loading="lazy" class="wide pos-arriba">
     </div>
   </div>
 </section>
@@ -205,11 +204,13 @@
 <section class="faq wrap" id="preguntas">
   <p class="kicker kicker--dark">Preguntas frecuentes</p>
   <h2>Lo que más nos preguntan</h2>
-  <details><summary>¿A qué zonas van?</summary><p>Estamos en Villa Carlos Paz y trabajamos en Punilla, Córdoba capital y toda la provincia. Para otras zonas, escribinos y lo vemos.</p></details>
-  <details><summary>¿Hacen shows en lugares cerrados o al aire libre?</summary><p>Los dos. Casas, salones, colegios, clubes, plazas y predios. Los shows aéreos con estructura necesitan un espacio abierto; te decimos qué hace falta según lo que elijas.</p></details>
-  <details><summary>¿Con cuánta anticipación conviene reservar?</summary><p>Lo antes posible. Agosto (Día del Niño), diciembre y los fines de semana se llenan rápido.</p></details>
-  <details><summary>¿Cuánto cuesta?</summary><p>Depende del show, la duración, la cantidad de artistas y el lugar. Escribinos por WhatsApp con los datos de tu evento y te pasamos el precio.</p></details>
-  <details><summary>¿Para qué edades es?</summary><p>Las funciones infantiles están pensadas para chicos desde los 2 años, y los shows aéreos y con fuego son para todo público.</p></details>
+  <dl class="faq__lista">
+    <div><dt>¿A qué zonas van?</dt><dd>Estamos en Villa Carlos Paz y trabajamos en Punilla, Córdoba capital y toda la provincia. Para otras zonas, escribinos y lo vemos.</dd></div>
+    <div><dt>¿Hacen shows en lugares cerrados o al aire libre?</dt><dd>Los dos. Casas, salones, colegios, clubes, plazas y predios. Los shows aéreos con estructura necesitan un espacio abierto; te decimos qué hace falta según lo que elijas.</dd></div>
+    <div><dt>¿Con cuánta anticipación conviene reservar?</dt><dd>Lo antes posible. Agosto (Día del Niño), diciembre y los fines de semana se llenan rápido.</dd></div>
+    <div><dt>¿Cuánto cuesta?</dt><dd>Depende del show, la duración, la cantidad de artistas y el lugar. Escribinos por WhatsApp con los datos de tu evento y te pasamos el precio.</dd></div>
+    <div><dt>¿Para qué edades es?</dt><dd>Las funciones infantiles están pensadas para chicos desde los 2 años, y los shows aéreos y con fuego son para todo público.</dd></div>
+  </dl>
 </section>
 
 <section class="contacto" id="contacto">
@@ -242,7 +243,11 @@ const hdr = document.getElementById('top');
 addEventListener('scroll', () => hdr.classList.toggle('top--solid', scrollY > 40), { passive: true });
 // aparecer al bajar
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
-document.querySelectorAll('.card, .intro, .pasos li, .grid img, .juegos, .faq details').forEach(el => { el.classList.add('rv'); io.observe(el); });
+document.querySelectorAll('.servicio, .intro, .pasos li, .juegos, .serranita, .faq__lista div').forEach(el => { el.classList.add('rv'); io.observe(el); });
+// el menú marca la sección en la que estás
+const links = [...nav.querySelectorAll('a[href^="#"]')];
+const marca = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle('activo', a.getAttribute('href') === '#' + e.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
+links.forEach(a => { const t = document.querySelector(a.getAttribute('href')); if (t) marca.observe(t); });
 </script>
 </body>
 </html>
