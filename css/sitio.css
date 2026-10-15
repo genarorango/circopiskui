@@ -177,3 +177,11 @@ p{margin:0 0 1em}
 .intro>ul,.intro>img{grid-column:2}
 .intro__txt{grid-row:1/span 2}
 @media (max-width:960px){.intro>ul,.intro>img{grid-column:auto}.intro__txt{grid-row:auto}}
+
+/* tarjeta de fuego: llamas animadas hasta tener una foto real */
+.card__fuego{aspect-ratio:4/3;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 120%,#ff9a1f 0%,#e2360f 30%,#5a0f1c 62%,#16112a 100%)}
+.card__fuego span{position:absolute;bottom:-10%;left:50%;width:34%;aspect-ratio:1/1.6;border-radius:50% 50% 45% 45%/60% 60% 40% 40%;background:radial-gradient(ellipse at 50% 80%,#fff6c2 0%,#ffd23c 25%,#ff7a1a 55%,rgba(226,54,15,0) 75%);transform:translateX(-50%);filter:blur(2px);animation:llama 1.6s ease-in-out infinite alternate;mix-blend-mode:screen}
+.card__fuego span:nth-child(2){left:30%;width:24%;animation-duration:1.2s;animation-delay:-.4s}
+.card__fuego span:nth-child(3){left:70%;width:26%;animation-duration:1.4s;animation-delay:-.8s}
+@keyframes llama{0%{transform:translateX(-50%) scaleY(.9) skewX(-4deg)}100%{transform:translateX(-50%) scaleY(1.12) skewX(5deg)}}
+@media (prefers-reduced-motion:reduce){.card__fuego span{animation:none}}
