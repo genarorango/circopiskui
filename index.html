@@ -1,329 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Circo PISKUI · Acrobacia aérea, fuego y animaciones que cortan el aliento. Córdoba, Argentina.">
-  <meta name="theme-color" content="#0a0612">
-  <title>Circo PISKUI · Espectáculo aéreo, fuego y magia</title>
-  <link rel="shortcut icon" href="./img/circo.PNG">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Circo Piskui · Eventos y espectáculos de circo en Córdoba</title>
+<meta name="description" content="Circo Piskui, empresa de eventos y espectáculos de circo desde 2009 en Villa Carlos Paz, Córdoba. Eventos para empresas, municipios y colegios, cumpleaños infantiles, kermés, Día del Niño, family day, shows aéreos y con fuego para eventos, y funciones a la gorra en temporada.">
+<meta property="og:title" content="Circo Piskui · Eventos y espectáculos">
+<meta property="og:description" content="Cumpleaños, kermés, Día del Niño, shows aéreos y con fuego. Villa Carlos Paz, Córdoba.">
+<meta property="og:image" content="https://circopiskui.com/img/w/duo.webp">
+<meta property="og:url" content="https://circopiskui.com/">
+<meta name="theme-color" content="#16112a">
+<link rel="icon" href="img/w/logo.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/sitio.css?v=1">
 </head>
 <body>
 
-  <!-- ── AMBIENT PARTICLES (capa fija de fondo en todo el sitio) ─────────── -->
-  <div class="particles" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
-    <span></span><span></span><span></span><span></span><span></span>
+<header class="top" id="top">
+  <a class="brand" href="#inicio" aria-label="Circo Piskui, inicio"><img src="img/w/logo.webp" alt="" width="44" height="44"><span>Circo Piskui<small>Eventos y espectáculos</small></span></a>
+  <nav id="nav" aria-label="Secciones">
+    <a href="#eventos">Eventos</a>
+    <a href="#cumples">Cumpleaños</a>
+    <a href="#temporada">Temporada</a>
+    <a href="#galeria">Galería</a>
+    <a href="app/">Juegos</a>
+    <a href="#preguntas">Preguntas</a>
+  </nav>
+  <a class="btn btn--wa btn--sm" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20show" target="_blank" rel="noopener">WhatsApp</a>
+  <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <img class="hero__bg" src="img/w/duo.webp" alt="Ricky y Carla del Circo Piskui en escena" fetchpriority="high">
+  <div class="hero__in">
+    <p class="kicker">Eventos y espectáculos · Córdoba · desde 2009</p>
+    <h1>Eventos con<br><em>alma de circo</em></h1>
+    <p class="lead">Producimos eventos para empresas, municipios, colegios y familias: Día del Niño, family days, kermés, cumpleaños, shows aéreos y con fuego. Nos ocupamos de todo, de la propuesta al montaje.</p>
+    <div class="hero__cta">
+      <a class="btn btn--wa" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20contratar%20un%20show" target="_blank" rel="noopener">Pedir presupuesto</a>
+      <a class="btn btn--ghost" href="#eventos">Ver servicios</a>
+    </div>
+    <ul class="chips">
+      <li>Cumpleaños</li><li>Kermés</li><li>Día del Niño</li><li>Family day</li><li>Shows aéreos</li><li>Fuego</li>
+    </ul>
   </div>
+</section>
 
-  <!-- ── NAV ─────────────────────────────────────────────────────────────── -->
-  <header class="nav">
-    <a href="#hero" class="nav__logo" aria-label="Inicio">
-      <img src="./img/circo.PNG" alt="Circo PISKUI">
-    </a>
-    <button class="nav__toggle" aria-label="Menu" id="navToggle">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav__menu" id="navMenu">
-      <a href="#sobre">Historia</a>
-      <a href="#shows">Espectáculos</a>
-      <a href="#stats">Trayectoria</a>
-      <a href="#galeria">Galería</a>
-      <a href="#contacto" class="nav__cta">Reservar</a>
-    </nav>
-  </header>
+<section class="intro wrap">
+  <div class="intro__txt">
+    <p class="kicker kicker--dark">Quiénes somos</p>
+    <h2>Una empresa de eventos hecha por artistas de circo</h2>
+    <p>Circo Piskui nació en Villa Carlos Paz en 2009. Hoy producimos eventos y espectáculos para empresas, municipios, colegios, clubes, boliches y familias de toda la provincia de Córdoba.</p>
+    <p>Tenemos elenco propio, carpa, estructura aérea, inflables y juegos de kermés. Armamos cada propuesta a medida: según el público, el lugar y lo que quieras lograr.</p>
+  </div>
+  <ul class="facts">
+    <li><b>2009</b><span>en eventos y espectáculos</span></li>
+    <li><b>+12</b><span>disciplinas de circo</span></li>
+    <li><b>Toda</b><span>la provincia de Córdoba</span></li>
+  </ul>
+</section>
 
-  <!-- ── HERO ────────────────────────────────────────────────────────────── -->
-  <section id="hero" class="hero">
-    <video class="hero__video" autoplay muted loop playsinline poster="./img/aereo.jpeg">
-      <source src="./img/WhatsApp Video 2023-08-31 at 13.46.02.mp4" type="video/mp4">
-    </video>
-    <div class="hero__overlay"></div>
-    <div class="light-beam light-beam--1" aria-hidden="true"></div>
-    <div class="light-beam light-beam--2" aria-hidden="true"></div>
+<section class="eventos" id="eventos">
+  <div class="wrap">
+    <p class="kicker">Servicios</p>
+    <h2>Qué evento estás armando</h2>
+    <div class="cards">
 
-    <div class="hero__content">
-      <p class="hero__eyebrow">Córdoba · desde 2009</p>
-      <h1 class="hero__title">
-        <span class="line line--1">Circo</span>
-        <span class="line line--2">PISKUI</span>
-      </h1>
-      <p class="hero__tagline">
-        Acrobacia aérea, fuego, malabares.<br>
-        Un espectáculo que se eleva por encima de la realidad.
-      </p>
-      <a href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20reservar%20un%20show" target="_blank" class="hero__cta">
-        <span>Reservar espectáculo</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </div>
-
-    <div class="hero__scroll" aria-hidden="true">
-      <span class="hero__scroll-line"></span>
-      <span class="hero__scroll-text">scroll</span>
-    </div>
-  </section>
-
-  <!-- ── HISTORIA ────────────────────────────────────────────────────────── -->
-  <section id="sobre" class="section section--sobre reveal">
-    <div class="section__inner">
-      <p class="eyebrow">La historia</p>
-      <h2 class="float-y">El circo más grande<br>de Córdoba</h2>
-      <p class="section__lead">
-        Desde 2009 llevamos la magia del circo a fiestas, eventos y boliches de toda la provincia.
-        Una compañía nacida del aire, del fuego y de la noche cordobesa — donde cada función
-        es un viaje a otro plano.
-      </p>
-      <div class="sobre__grid">
-        <div class="sobre__img float-tile" style="--delay: 0s;"><img src="./img/acrobacias.jpeg" alt="Acrobacias" loading="lazy"></div>
-        <div class="sobre__img float-tile" style="--delay: 1.2s;"><img src="./img/aereo.jpeg" alt="Show aéreo" loading="lazy"></div>
-        <div class="sobre__img float-tile" style="--delay: 2.4s;"><img src="./img/carpa2.jpeg" alt="Carpa" loading="lazy"></div>
-        <div class="sobre__img float-tile" style="--delay: 0.6s;"><img src="./img/circo aro.jpeg" alt="Aro aéreo" loading="lazy"></div>
-      </div>
-      <div class="youtube-embed">
-        <iframe src="https://www.youtube.com/embed/S9BSwmeqXiQ" title="Circo PISKUI" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── ESPECTÁCULOS ────────────────────────────────────────────────────── -->
-  <section id="shows" class="section section--shows reveal">
-    <div class="section__inner">
-      <p class="eyebrow">Lo que ofrecemos</p>
-      <h2 class="float-y">Nuestros<br><em>espectáculos</em></h2>
-
-      <div class="shows__grid">
-
-        <article class="show-card">
-          <div class="show-card__media"><img src="./img/carpa.jpeg" alt="" loading="lazy"></div>
-          <div class="show-card__body">
-            <span class="show-card__num">01</span>
-            <h3>Animaciones infantiles</h3>
-            <ul>
-              <li>Función de circo · malabares · acrobacias · magia</li>
-              <li>Show de burbujas</li>
-              <li>Acrobacias con airtrack</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="show-card">
-          <div class="show-card__media"><img src="./img/funcioon3.jpeg" alt="" loading="lazy"></div>
-          <div class="show-card__body">
-            <span class="show-card__num">02</span>
-            <h3>Tarde infantil · Family Day</h3>
-            <ul>
-              <li>Kermesse tradicional</li>
-              <li>Juegos deportivos · castillos inflables</li>
-              <li>Función de circo completa</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="show-card">
-          <div class="show-card__media"><img src="./img/aereo2.jpeg" alt="" loading="lazy"></div>
-          <div class="show-card__body">
-            <span class="show-card__num">03</span>
-            <h3>Espectáculos aéreos</h3>
-            <ul>
-              <li>Acrobacias en estructura sobre grúa</li>
-              <li>Trapecio fijo · trapecio a vuelo</li>
-              <li>Telas · cuerda indiana · pole aéreo</li>
-              <li>Teatro aéreo</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="show-card">
-          <div class="show-card__media"><img src="./img/aereo3.jpeg" alt="" loading="lazy"></div>
-          <div class="show-card__body">
-            <span class="show-card__num">04</span>
-            <h3>Eventos y fuego</h3>
-            <ul>
-              <li>Personajes en zancos</li>
-              <li>Malabares con fuego</li>
-              <li>Swing con fuego · lanza llamas</li>
-            </ul>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── STATS ───────────────────────────────────────────────────────────── -->
-  <section id="stats" class="section section--stats reveal">
-    <div class="section__inner">
-      <div class="stats__grid">
-        <div class="stat">
-          <p class="stat__num">15+</p>
-          <p class="stat__label">Años de trayectoria</p>
+      <article class="card" id="cumples">
+        <img src="img/w/funcion.webp" alt="Función de circo para chicos" loading="lazy">
+        <div class="card__b">
+          <h3>Cumpleaños infantiles</h3>
+          <p>Una función de circo en tu cumple, en casa, salón o al aire libre.</p>
+          <ul><li>Malabares, acrobacias, magia y baile</li><li>Show de burbujas</li><li>Acrobacias con airtrack</li><li>Los chicos participan del show</li></ul>
+          <a class="btn btn--wa btn--sm" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20cumplea%C3%B1os" target="_blank" rel="noopener">Consultar por un cumple</a>
         </div>
-        <div class="stat">
-          <p class="stat__num">500+</p>
-          <p class="stat__label">Eventos producidos</p>
+      </article>
+
+      <article class="card">
+        <img src="img/w/plaza.webp" alt="Kermés y juegos al aire libre con muchos chicos" loading="lazy">
+        <div class="card__b">
+          <h3>Kermés y family day</h3>
+          <p>Una tarde entera de juegos para colegios, clubes, barrios y empresas.</p>
+          <ul><li>Kermés tradicional: tumbalatas, puntería, pesca y más</li><li>Juegos deportivos: fútbol, básquet, rugby</li><li>Plaza infantil con castillos inflables y airtrack</li><li>Función de circo para cerrar</li></ul>
+          <a class="btn btn--wa btn--sm" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20una%20kerm%C3%A9s%20o%20family%20day" target="_blank" rel="noopener">Consultar por una kermés</a>
         </div>
-        <div class="stat">
-          <p class="stat__num">12</p>
-          <p class="stat__label">Disciplinas dominadas</p>
+      </article>
+
+      <article class="card card--sun">
+        <img src="img/w/acrobacias.webp" alt="Show de circo para una multitud de chicos al aire libre" loading="lazy">
+        <div class="card__b">
+          <h3>Día del Niño</h3>
+          <p>Armamos el festejo completo para municipios, empresas, gremios, clubes y colegios.</p>
+          <ul><li>Función de circo para mucho público</li><li>Kermés, inflables y juegos</li><li>Personajes en zancos y espuma</li><li>Conviene reservar con tiempo: agosto se llena</li></ul>
+          <a class="btn btn--wa btn--sm" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20el%20D%C3%ADa%20del%20Ni%C3%B1o" target="_blank" rel="noopener">Reservar Día del Niño</a>
         </div>
-        <div class="stat">
-          <p class="stat__num">∞</p>
-          <p class="stat__label">Niños sorprendidos</p>
+      </article>
+
+      <article class="card">
+        <img src="img/w/aereo2.webp" alt="Acróbatas en una estructura aérea" loading="lazy">
+        <div class="card__b">
+          <h3>Shows aéreos</h3>
+          <p>Para abrir un evento, una fiesta o un lanzamiento con algo que nadie olvida.</p>
+          <ul><li>Acrobacias grupales en estructura montada en grúa</li><li>Trapecio fijo y trapecio a vuelo</li><li>Telas, cuerda indiana y pole aéreo</li><li>Teatro aéreo</li></ul>
+          <a class="btn btn--wa btn--sm" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20show%20a%C3%A9reo" target="_blank" rel="noopener">Consultar show aéreo</a>
         </div>
-      </div>
-    </div>
-  </section>
+      </article>
 
-  <!-- ── GALERÍA ─────────────────────────────────────────────────────────── -->
-  <section id="galeria" class="section section--galeria reveal">
-    <div class="section__inner">
-      <p class="eyebrow">El espectáculo en imágenes</p>
-      <h2 class="float-y">Galería</h2>
-      <div class="galeria__grid">
-        <div class="galeria__item parallax-1"><img src="./img/aereo.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-2"><img src="./img/aereo4.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-1"><img src="./img/circo aro.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-3"><img src="./img/acrobacias.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-2"><img src="./img/carpa.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-1"><img src="./img/carpa2.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-3"><img src="./img/el buggy.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-2"><img src="./img/funcioon3.jpeg" alt="" loading="lazy"></div>
-        <div class="galeria__item parallax-1"><img src="./img/aereo2.jpeg" alt="" loading="lazy"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PROMOCIONES ─────────────────────────────────────────────────────── -->
-  <section id="promos" class="section section--promos reveal">
-    <div class="section__inner">
-      <p class="eyebrow">Beneficios y sorteos</p>
-      <h2 class="float-y">Concursá por entradas<br>al parque <em>La Serranita</em></h2>
-      <ol class="promos__list">
-        <li>
-          <span class="promos__num">01</span>
-          <p>Seguinos en <strong>Instagram</strong> y <strong>Facebook</strong> — subimos historias para participar.</p>
-        </li>
-        <li>
-          <span class="promos__num">02</span>
-          <p>Mandanos un saludo al programa <strong>"El Bar del 10"</strong> en Canal 10, viernes por la mañana.</p>
-        </li>
-        <li>
-          <span class="promos__num">03</span>
-          <p>Listo. Estás dentro del sorteo de entradas a <strong>La Serranita</strong>.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ── CONTACTO ────────────────────────────────────────────────────────── -->
-  <section id="contacto" class="section section--contacto reveal">
-    <div class="section__inner">
-      <p class="eyebrow">Contratá el espectáculo</p>
-      <h2 class="float-y">Hablemos por<br><em>WhatsApp</em></h2>
-      <p class="section__lead">Escribinos y armamos juntos el show perfecto para tu evento.</p>
-
-      <a href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20reservar%20un%20show" target="_blank" class="contacto__wa">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <div class="contacto__wa-text">
-          <span class="contacto__wa-label">WhatsApp directo</span>
-          <span class="contacto__wa-num">+54 9 3541 60-7879</span>
+      <article class="card">
+        <img src="img/w/escenario.webp" alt="Artistas del Circo Piskui en escenario" loading="lazy">
+        <div class="card__b">
+          <h3>Eventos, boliches y fuego</h3>
+          <p>Recepciones, casamientos, fiestas de empresa y noches de boliche.</p>
+          <ul><li>Personajes en zancos</li><li>Malabares con fuego</li><li>Swing con fuego y lanzallamas</li><li>Animación y recepción de invitados</li></ul>
+          <a class="btn btn--wa btn--sm" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20evento" target="_blank" rel="noopener">Consultar por un evento</a>
         </div>
-      </a>
+      </article>
 
-      <div class="contacto__social">
-        <a href="https://www.instagram.com/circopiskui/" target="_blank" aria-label="Instagram">
-          <img src="./img/Instagram_logo_2016.svg.webp" alt="">
-          <span>@circopiskui</span>
-        </a>
-        <a href="https://www.facebook.com/circopiskui" target="_blank" aria-label="Facebook">
-          <img src="./img/Facebook_f_logo_(2019).svg.png" alt="">
-          <span>Facebook</span>
-        </a>
-      </div>
+      <article class="card">
+        <img src="img/w/espuma.webp" alt="Chicos jugando en una fiesta de espuma" loading="lazy">
+        <div class="card__b">
+          <h3>Espuma y burbujas</h3>
+          <p>El cierre que los chicos piden siempre, ideal para días de calor.</p>
+          <ul><li>Fiesta de espuma</li><li>Show de burbujas gigantes</li><li>Se suma a cualquier evento</li></ul>
+          <a class="btn btn--wa btn--sm" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20espuma%20y%20burbujas" target="_blank" rel="noopener">Sumar espuma</a>
+        </div>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ── FOOTER ──────────────────────────────────────────────────────────── -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <img src="./img/circo.PNG" alt="Circo PISKUI" class="footer__logo">
-      <p class="footer__tag">Acrobacia aérea · fuego · magia</p>
-      <p class="footer__copy">© 2026 Circo PISKUI · Córdoba, Argentina · Todos los derechos reservados</p>
+<section class="temporada" id="temporada">
+  <img src="img/w/carpanoche.webp" alt="La carpa del Circo Piskui iluminada de noche" loading="lazy">
+  <div class="temporada__in wrap">
+    <p class="kicker">Temporada de verano</p>
+    <h2>Funciones a la gorra<br>en Villa Carlos Paz</h2>
+    <p>Cada temporada salimos a hacer funciones abiertas en Carlos Paz. Venís, mirás el show completo y al final cada uno colabora con lo que puede. Así el circo es para todos.</p>
+    <p class="muted">Las fechas, horarios y el lugar los anunciamos en Instagram.</p>
+    <a class="btn btn--light" href="https://www.instagram.com/circopiskui/" target="_blank" rel="noopener">Ver fechas en Instagram</a>
+  </div>
+</section>
+
+<section class="pasos wrap">
+  <p class="kicker kicker--dark">Cómo trabajamos</p>
+  <h2>De la consulta a la función</h2>
+  <ol>
+    <li><b>Nos contás tu evento</b><span>Fecha, lugar, tipo de público y cantidad de personas.</span></li>
+    <li><b>Te armamos la propuesta</b><span>Servicios, duración, necesidades técnicas y presupuesto.</span></li>
+    <li><b>Producimos el evento</b><span>Llegamos, montamos, hacemos el show y desarmamos. Vos disfrutás.</span></li>
+  </ol>
+</section>
+
+<section class="galeria" id="galeria">
+  <div class="wrap">
+    <p class="kicker">Galería</p>
+    <h2>El circo en imágenes</h2>
+    <div class="grid">
+      <img src="img/w/cintas.webp" alt="Artista con cintas en escena" loading="lazy" class="tall">
+      <img src="img/w/aro.webp" alt="Número con aro" loading="lazy">
+      <img src="img/w/carpa2.webp" alt="Malabares bajo la carpa" loading="lazy">
+      <img src="img/w/aereo.webp" alt="Acróbatas en el cielo" loading="lazy">
+      <img src="img/w/globos.webp" alt="Show con globos" loading="lazy">
+      <img src="img/w/vertical.webp" alt="Vertical sobre las manos" loading="lazy" class="tall">
+      <img src="img/w/lapachos.webp" alt="La carpa entre lapachos" loading="lazy">
+      <img src="img/w/buggy.webp" alt="Número del buggy" loading="lazy">
+      <img src="img/w/asisomos.webp" alt="Ricky y Carla" loading="lazy" class="wide">
+      <img src="img/w/aereobn.webp" alt="Acrobacia aérea en blanco y negro" loading="lazy" class="wide">
+      <img src="img/w/carpa.webp" alt="Carpa al atardecer" loading="lazy" class="wide">
     </div>
-  </footer>
+    <div class="video">
+      <button class="video__play" id="play" data-id="S9BSwmeqXiQ" aria-label="Ver el video del Circo Piskui">
+        <img src="https://i.ytimg.com/vi/S9BSwmeqXiQ/hqdefault.jpg" alt="" loading="lazy"><span>▶</span>
+      </button>
+    </div>
+  </div>
+</section>
 
-  <!-- ── FLOATING WHATSAPP ───────────────────────────────────────────────── -->
-  <a href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20reservar%20un%20show" target="_blank" class="wa-float" aria-label="Contactar por WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+<section class="juegos wrap">
+  <div class="juegos__art"><img src="img/w/ricky.webp" alt="Ricky, personaje del juego" loading="lazy"><img src="img/w/carla.webp" alt="Carla, personaje del juego" loading="lazy"></div>
+  <div class="juegos__txt">
+    <p class="kicker kicker--dark">Nuevo</p>
+    <h2>El circo también<br>en el celu</h2>
+    <p>Circo Piskui tiene su propio juego para chicos: minijuegos de kermés, vestir y maquillar a Ricky y Carla, armar tu circo y pasear por La Serranita.</p>
+    <a class="btn btn--violet" href="app/">Conocé el juego</a>
+  </div>
+</section>
 
-  <script>
-    // mobile menu toggle
-    const navToggle = document.getElementById('navToggle')
-    const navMenu = document.getElementById('navMenu')
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('is-open')
-      navToggle.classList.toggle('is-open')
-    })
-    document.querySelectorAll('.nav__menu a').forEach(a => a.addEventListener('click', () => {
-      navMenu.classList.remove('is-open')
-      navToggle.classList.remove('is-open')
-    }))
+<section class="faq wrap" id="preguntas">
+  <p class="kicker kicker--dark">Preguntas frecuentes</p>
+  <h2>Lo que más nos preguntan</h2>
+  <details><summary>¿A qué zonas van?</summary><p>Estamos en Villa Carlos Paz y trabajamos en Punilla, Córdoba capital y toda la provincia. Para otras zonas, escribinos y lo vemos.</p></details>
+  <details><summary>¿Hacen shows en lugares cerrados o al aire libre?</summary><p>Los dos. Casas, salones, colegios, clubes, plazas y predios. Los shows aéreos con estructura necesitan un espacio abierto; te decimos qué hace falta según lo que elijas.</p></details>
+  <details><summary>¿Con cuánta anticipación conviene reservar?</summary><p>Lo antes posible. Agosto (Día del Niño), diciembre y los fines de semana se llenan rápido.</p></details>
+  <details><summary>¿Cuánto cuesta?</summary><p>Depende del show, la duración, la cantidad de artistas y el lugar. Escribinos por WhatsApp con los datos de tu evento y te pasamos el precio.</p></details>
+  <details><summary>¿Para qué edades es?</summary><p>Las funciones infantiles están pensadas para chicos desde los 2 años, y los shows aéreos y con fuego son para todo público.</p></details>
+</section>
 
-    // reveal sections on scroll
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in') })
-    }, { threshold: 0.12 })
-    document.querySelectorAll('.reveal, .show-card, .galeria__item, .promos__list li, .stat').forEach(el => io.observe(el))
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <img src="img/w/logo.webp" alt="Logo Circo Piskui" width="120" height="120" loading="lazy">
+    <h2>¿Armamos tu evento?</h2>
+    <p>Escribinos y te mandamos propuesta y presupuesto.</p>
+    <a class="btn btn--wa btn--big" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20contratar%20un%20show" target="_blank" rel="noopener">WhatsApp +54 9 3541 60-7879</a>
+    <div class="redes">
+      <a href="https://www.instagram.com/circopiskui/" target="_blank" rel="noopener">Instagram @circopiskui</a>
+      <a href="https://www.facebook.com/circopiskui" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+</main>
 
-    // parallax on scroll for gallery (mobile-aware: lighter motion on small screens)
-    const parallaxItems = document.querySelectorAll('.parallax-1, .parallax-2, .parallax-3')
-    const isMobile = window.matchMedia('(max-width: 768px)').matches
-    let raf = null
-    function updateParallax() {
-      raf = null
-      const sy = window.scrollY
-      parallaxItems.forEach(el => {
-        const rect = el.getBoundingClientRect()
-        const center = rect.top + rect.height / 2 - window.innerHeight / 2
-        const factor = el.classList.contains('parallax-1') ? 0.06 : el.classList.contains('parallax-2') ? 0.10 : 0.14
-        const offset = -center * factor * (isMobile ? 0.5 : 1)
-        el.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0)`
-      })
-    }
-    window.addEventListener('scroll', () => { if (!raf) raf = requestAnimationFrame(updateParallax) }, { passive: true })
-    updateParallax()
+<footer class="pie">
+  <p>© <span id="y">2026</span> Circo Piskui · Villa Carlos Paz, Córdoba, Argentina</p>
+  <p><a href="app/">Juego Circo Piskui</a> · <a href="app/terminos.html">Términos del juego</a> · <a href="app/privacidad.html">Privacidad del juego</a></p>
+</footer>
 
-    // count-up animation on stats
-    const statsIO = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (!e.isIntersecting) return
-        const el = e.target.querySelector('.stat__num')
-        if (!el || el.dataset.done) return
-        const text = el.textContent.trim()
-        const num = parseInt(text)
-        if (isNaN(num)) { el.dataset.done = '1'; return }
-        const suffix = text.replace(String(num), '')
-        let v = 0; const dur = 1400; const start = performance.now()
-        function tick(t) {
-          const p = Math.min((t - start) / dur, 1)
-          const eased = 1 - Math.pow(1 - p, 3)
-          v = Math.floor(num * eased)
-          el.textContent = v + suffix
-          if (p < 1) requestAnimationFrame(tick)
-          else el.dataset.done = '1'
-        }
-        requestAnimationFrame(tick)
-      })
-    }, { threshold: 0.5 })
-    document.querySelectorAll('.stat').forEach(s => statsIO.observe(s))
-  </script>
+<a class="wa-float" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20quiero%20consultar%20por%20un%20show" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path fill="#fff" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg></a>
 
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+const menu = document.getElementById('menu'), nav = document.getElementById('nav');
+menu.addEventListener('click', () => { const o = document.body.classList.toggle('nav-open'); menu.setAttribute('aria-expanded', o); });
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { document.body.classList.remove('nav-open'); menu.setAttribute('aria-expanded', false); }));
+const hdr = document.getElementById('top');
+addEventListener('scroll', () => hdr.classList.toggle('top--solid', scrollY > 40), { passive: true });
+// el video de YouTube recién se carga al tocarlo (la página abre más rápido)
+document.getElementById('play').addEventListener('click', function () {
+  const f = document.createElement('iframe');
+  f.src = 'https://www.youtube-nocookie.com/embed/' + this.dataset.id + '?autoplay=1';
+  f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true; f.title = 'Video del Circo Piskui';
+  this.replaceWith(f);
+});
+// aparecer al bajar
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.card, .intro, .pasos li, .grid img, .juegos, .faq details').forEach(el => { el.classList.add('rv'); io.observe(el); });
+</script>
 </body>
 </html>

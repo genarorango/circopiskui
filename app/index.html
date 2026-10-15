@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Juego Circo Piskui · Minijuegos de circo para chicos</title>
+<meta name="description" content="Circo Piskui, el juego: minijuegos de kermés, el camerino para vestir y maquillar a Ricky y Carla, Arma tu circo y La Serranita. Para chicos de 2 a 10 años.">
+<meta property="og:image" content="https://circopiskui.com/img/w/cover_circo.webp">
+<meta name="theme-color" content="#16112a">
+<link rel="icon" href="../img/w/app-icon.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/sitio.css?v=1">
+<style>
+.app-hero{background:linear-gradient(160deg,#2a1b52,var(--noche));color:#fff;padding:120px 0 80px}
+.app-hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.app-hero h1{font-size:clamp(42px,7vw,84px)}
+.app-hero .lead{margin-bottom:26px}
+.app-icon{width:84px;height:84px;border-radius:22px;margin-bottom:22px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.app-hero .duo{display:flex;justify-content:center;align-items:flex-end}
+.app-hero .duo img{width:48%;max-width:260px;filter:drop-shadow(0 16px 24px rgba(0,0,0,.4))}
+.app-hero .duo img+img{margin-left:-8%}
+.stores{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.stores span{padding:10px 16px;border-radius:12px;background:rgba(255,255,255,.1);font-size:14px}
+.feat{padding:90px 0}
+.feat .cards .card{background:#fff;color:var(--tinta);box-shadow:var(--sombra)}
+.feat .card p{color:#4a4063}
+.lista{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.lista div{background:#fff;border-radius:18px;padding:22px;box-shadow:0 4px 18px rgba(22,17,42,.07)}
+.lista b{display:block;font:800 19px var(--fd);margin-bottom:4px}
+.lista span{color:var(--gris);font-size:15.5px}
+.legal{background:var(--noche);color:#fff;padding:80px 0;border-radius:40px 40px 0 0}
+.legal .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+@media (max-width:820px){.app-hero .wrap,.lista{grid-template-columns:1fr}.app-hero{padding-top:100px}}
+</style>
+</head>
+<body>
+<header class="top top--solid" id="top">
+  <a class="brand" href="../" aria-label="Circo Piskui, inicio"><img src="../img/w/logo.webp" alt="" width="44" height="44"><span>Circo Piskui</span></a>
+  <nav id="nav" aria-label="Secciones"><a href="../">El circo</a><a href="#juegos">Juegos</a><a href="#familias">Familias</a><a href="#legal">Legal</a></nav>
+  <a class="btn btn--violet btn--sm" href="https://circo-piskui.vercel.app/?src=sitio" target="_blank" rel="noopener" style="box-shadow:none">Jugar</a>
+  <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main>
+<section class="app-hero">
+  <div class="wrap">
+    <div>
+      <img class="app-icon" src="../img/w/app-icon.webp" alt="Ícono del juego Circo Piskui">
+      <p class="kicker">El juego del circo</p>
+      <h1>Circo Piskui<br>en tu celu</h1>
+      <p class="lead">Minijuegos de kermés, el camerino para vestir y maquillar a Ricky y Carla, armá tu propio circo y paseá por La Serranita. Para chicos de 2 a 10 años, sin publicidad.</p>
+      <a class="btn btn--wa" href="https://circo-piskui.vercel.app/?src=sitio" target="_blank" rel="noopener">Jugar ahora en el navegador</a>
+      <div class="stores"><span>Google Play · muy pronto</span><span>App Store · muy pronto</span></div>
+    </div>
+    <div class="duo"><img src="../img/w/ricky.webp" alt="Ricky"><img src="../img/w/carla.webp" alt="Carla"></div>
+  </div>
+</section>
+
+<section class="feat" id="juegos">
+  <div class="wrap">
+    <p class="kicker kicker--dark">Qué tiene</p>
+    <h2>Un circo entero para jugar</h2>
+    <div class="cards">
+      <article class="card"><img src="../img/w/cover_serranita.webp" alt="La Serranita" loading="lazy"><div class="card__b"><h3>La Serranita</h3><p>Paseá con Ricky, Carla y Bubín por el parque, la cocina, la pieza y el circuito.</p></div></article>
+      <article class="card"><img src="../img/w/cover_circo.webp" alt="Arma tu circo" loading="lazy"><div class="card__b"><h3>Armá tu circo</h3><p>Elegí los números, los artistas y armá tu propia función.</p></div></article>
+      <article class="card"><img src="../img/w/funcion.webp" alt="Minijuegos de kermés" loading="lazy"><div class="card__b"><h3>Kermés y minijuegos</h3><p>Tirá los vasos, embocá el aro, el martillo, pochoclos, piano, burbujas, pegale al topo, Ricky bala y muchos más.</p></div></article>
+    </div>
+    <div class="lista">
+      <div><b>El camerino</b><span>Maquillá y vestí a Ricky y Carla con trajes de circo, Halloween y acrobacia.</span></div>
+      <div><b>Tienda con monedas</b><span>Ganás monedas jugando y las cambiás por ropa, alas y animalitos.</span></div>
+      <div><b>Colorear y vestir</b><span>Dibujos para pintar y amigos para disfrazar.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq wrap" id="familias">
+  <p class="kicker kicker--dark">Para mamás y papás</p>
+  <h2>Pensado para chicos</h2>
+  <details open><summary>¿Tiene publicidad?</summary><p>No. No hay publicidad, ni chat, ni contacto con otras personas.</p></details>
+  <details><summary>¿Es gratis?</summary><p>Los minijuegos, el camerino y la tienda con monedas del juego son gratis. La Serranita y Armá tu circo se juegan completos la primera vez; después, una parte sigue gratis y el resto es parte del <b>Piskui Club</b>, una suscripción opcional que se paga desde la tienda del celular.</p></details>
+  <details><summary>¿Los chicos pueden comprar sin querer?</summary><p>No. Antes de cualquier pago aparece un control para adultos, y el cobro siempre lo confirma la tienda (Google Play o App Store) con la cuenta del adulto.</p></details>
+  <details><summary>¿Qué datos usa?</summary><p>Ninguno del chico. El progreso se guarda en el celular y la app manda solo estadísticas anónimas de uso para mejorar los juegos. Los detalles están en la <a href="privacidad.html">política de privacidad</a>.</p></details>
+  <details><summary>¿Cómo cancelo el Piskui Club?</summary><p>Desde la tienda: en Android, Play Store → Pagos y suscripciones → Suscripciones; en iPhone, Ajustes → tu nombre → Suscripciones. Más info en los <a href="terminos.html">términos</a>.</p></details>
+</section>
+
+<section class="legal" id="legal">
+  <div class="wrap">
+    <p class="kicker">Legal</p>
+    <h2>Términos y privacidad del juego</h2>
+    <p style="max-width:640px;opacity:.85">Todo lo que tenés que saber sobre el uso del juego, la suscripción Piskui Club, las devoluciones y cómo cuidamos los datos.</p>
+    <div class="links">
+      <a class="btn btn--light" href="terminos.html">Términos y condiciones</a>
+      <a class="btn btn--ghost" href="privacidad.html">Política de privacidad</a>
+      <a class="btn btn--ghost" href="https://wa.me/5493541607879?text=Hola%20Circo%20Piskui%2C%20tengo%20una%20consulta%20sobre%20el%20juego" target="_blank" rel="noopener">Contacto</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pie" style="padding-top:20px">
+  <p>© 2026 Circo Piskui · Villa Carlos Paz, Córdoba, Argentina</p>
+  <p><a href="../">Circo Piskui</a> · <a href="terminos.html">Términos</a> · <a href="privacidad.html">Privacidad</a></p>
+</footer>
+<script>
+const menu = document.getElementById('menu');
+menu.addEventListener('click', () => { const o = document.body.classList.toggle('nav-open'); menu.setAttribute('aria-expanded', o); });
+document.querySelectorAll('#nav a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('nav-open')));
+</script>
+</body>
+</html>
