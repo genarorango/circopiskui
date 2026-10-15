@@ -198,3 +198,8 @@ p{margin:0 0 1em}
 .tag--ricky svg{left:58%;top:100%}
 .tag--carla{right:2%;background:var(--violeta);transform:rotate(4deg)}
 .tag--carla svg{right:58%;top:100%}
+
+/* galería tipo mosaico: cada foto entera, con su forma original */
+.grid{display:block;columns:4 240px;column-gap:12px}
+.grid img,.grid .tall,.grid .wide{width:100%;height:auto;aspect-ratio:auto;margin:0 0 12px;break-inside:avoid;object-fit:contain;grid-row:auto;grid-column:auto}
+@media (max-width:600px){.grid{columns:2;column-gap:8px}.grid img{margin-bottom:8px;border-radius:12px}}
